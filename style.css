@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(./assets/1117123.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.game-info{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 0.5rem;
+    transform: translateX(-47%);
+    background-color: rgba(225,225,225,0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(225,225,225,0.25);
+    box-shadow: 0px 0px 30px rgb(26, 33, 100);
+    text-shadow: 0px 0px 50px  rgb(12, 238, 31);
+    padding: 0.5rem 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.tic-tac-toe{
+  position: absolute;
+  top: 17rem;
+  left: 33.38rem;
+  width: 90%;
+  max-width: 20rem;
+  background-color: rgba(225,225,225,0.15);
+  /* background-image:linear-gradient(to bottom , rgba(136, 133, 133, 0.329),rgba(136, 133, 133, 0.329),rgba(250, 248, 248, 0.295)); */
+  border-radius: 1rem;
+  border: 1px solid rgba(225,225,225,0.25);
+  box-shadow: 0px 0px 30px rgb(26, 33, 100);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  aspect-ratio: 1/1;
+
+}
+
+.box{
+    position: relative;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font: bold;
+    width: 100%;
+    aspect-ratio: 1/1;
+    
+}
+
+/* .box.active{
+    position: relative;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font: bold;
+    width: 100%;
+    aspect-ratio: 1/1;
+    text-shadow: 0px 0px 30px rgb(255, 251, 0);
+} */
+
+.box1,.box2,.box4,.box5{
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.685) ;
+    border-radius: 1px;
+}
+
+.box3,.box6{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.685);
+    border-radius: 1px;
+}
+
+.box7,.box8{
+    border-right: 2px solid rgba(255, 255, 255, 0.685);
+    border-radius: 1px;
+}
+
+.btn{
+    display: none;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-47%);
+    background-color: rgba(225,225,225,0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(225,225,225,0.25);
+    box-shadow: 0px 0px 30px rgb(26, 33, 100);
+    text-shadow: 0px 0px 20px  rgb(12, 238, 31);
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgba(4, 182, 78, 0.705);
+    /* border-radius: 1rem; */
+}
+
+.xPlayer{
+    text-shadow: 0px 0px 30px rgb(255, 238, 0);
+}
+
+.yPlayer{
+    text-shadow: 0px 0px 30px rgb(0, 255, 200);
+}
+
+
